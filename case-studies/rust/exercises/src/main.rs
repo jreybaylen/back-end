@@ -1,5 +1,8 @@
 use exercises::display_heading;
-use exercises::lessons::variables;
+use exercises::lessons::{
+    variables,
+    types
+};
 
 fn main() {
     println!("\nWelcome to Rust World!");
@@ -12,6 +15,7 @@ fn main() {
     variables::lesson5();
 
     display_heading("Types");
+    types::lesson1();
 
     println!();
 }

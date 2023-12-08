@@ -1,3 +1,5 @@
+use crate::lessons::lesson_complete;
+
 /* Binding and mutability: 🌟 A variable can be used only if it has been initialized. */
 pub fn lesson1() {
     let x: i32 = 5;
@@ -8,7 +10,7 @@ pub fn lesson1() {
 
     assert_eq!(x, 5);
     assert_eq!(z, 3);
-    println!("lesson1: Success!");
+    lesson_complete(1);
 }
 
 /* Scope: 🌟is the range within the program for which the item is valid. */
@@ -23,13 +25,7 @@ pub fn lesson2() {
 
     assert_eq!(y, 3);
 
-    // fn define_x() {
-    //     let x = "hello";
-    // }
-    //
-    // println!("{}, world", x); Error
-
-    println!("lesson2: Success!");
+    lesson_complete(2);
 }
 
 /* Shadowing: 🌟🌟 You can declare a new variable with the same name as a previous variable,
@@ -48,14 +44,14 @@ pub fn lesson3() {
     let x = 42;
 
     assert_eq!(x, 42);
-    println!("lesson3: Success!");
+    lesson_complete(3);
 }
 
 /* Unused variables: 🌟🌟 */
 pub fn lesson4() {
     let _x = 1;
 
-    println!("lesson4: Success!");
+    lesson_complete(4);
 }
 
 /* Destructuring: 🌟🌟 We can use a pattern with let to destructure a tuple to separate variables. */
@@ -71,5 +67,5 @@ pub fn lesson5() {
     [ .., y ] = [ 1, 2 ];
 
     assert_eq!([ x, y ], [ 3, 2 ]);
-    println!("lesson5: Success!");
+    lesson_complete(5);
 }
