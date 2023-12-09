@@ -3,7 +3,8 @@ use exercises::lessons::{
     variables,
     types,
     char_bool_unit,
-    statement_expressions
+    statement_expressions,
+    functions
 };
 
 fn main() {
@@ -29,6 +30,10 @@ fn main() {
 
     display_heading("Statements and Expressions");
     statement_expressions::lesson1();
+
+    display_heading("Functions");
+    functions::lesson1();
+    functions::lesson2();
 
     println!();
 }
