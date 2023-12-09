@@ -2,7 +2,8 @@ use exercises::display_heading;
 use exercises::lessons::{
     variables,
     types,
-    char_bool_unit
+    char_bool_unit,
+    statement_expressions
 };
 
 fn main() {
@@ -25,6 +26,9 @@ fn main() {
     char_bool_unit::lesson1();
     char_bool_unit::lesson2();
     char_bool_unit::lesson3();
+
+    display_heading("Statements and Expressions");
+    statement_expressions::lesson1();
 
     println!();
 }
