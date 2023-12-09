@@ -1,7 +1,8 @@
 use exercises::display_heading;
 use exercises::lessons::{
     variables,
-    types
+    types,
+    char_bool_unit
 };
 
 fn main() {
@@ -19,6 +20,11 @@ fn main() {
     types::lesson2();
     types::lesson3();
     types::lesson4();
+
+    display_heading("Char, Bool, and Unit");
+    char_bool_unit::lesson1();
+    char_bool_unit::lesson2();
+    char_bool_unit::lesson3();
 
     println!();
 }
