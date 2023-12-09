@@ -16,6 +16,9 @@ fn main() {
 
     display_heading("Types");
     types::lesson1();
+    types::lesson2();
+    types::lesson3();
+    types::lesson4();
 
     println!();
 }

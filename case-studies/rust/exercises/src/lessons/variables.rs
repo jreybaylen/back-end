@@ -1,6 +1,6 @@
 use crate::lessons::lesson_complete;
 
-/* Binding and mutability: 🌟 A variable can be used only if it has been initialized. */
+/* Binding and mutability: 🌟 */
 pub fn lesson1() {
     let x: i32 = 5;
     let _y: i32;
@@ -13,7 +13,7 @@ pub fn lesson1() {
     lesson_complete(1);
 }
 
-/* Scope: 🌟is the range within the program for which the item is valid. */
+/* Scope: 🌟 */
 pub fn lesson2() {
     {
         let y: i32 = 5;
@@ -28,8 +28,7 @@ pub fn lesson2() {
     lesson_complete(2);
 }
 
-/* Shadowing: 🌟🌟 You can declare a new variable with the same name as a previous variable,
-    here we can say the first one is shadowed by the second one. */
+/* Shadowing: 🌟🌟 */
 pub fn lesson3() {
     let x: i32 = 5;
 
@@ -54,7 +53,7 @@ pub fn lesson4() {
     lesson_complete(4);
 }
 
-/* Destructuring: 🌟🌟 We can use a pattern with let to destructure a tuple to separate variables. */
+/* Destructuring: 🌟🌟 */
 pub fn lesson5() {
     let (mut x, mut y) = (1, 2);
 
