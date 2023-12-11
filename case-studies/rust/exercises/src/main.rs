@@ -4,7 +4,8 @@ use exercises::lessons::{
     types,
     char_bool_unit,
     statement_expressions,
-    functions
+    functions,
+    ownership
 };
 
 fn main() {
@@ -34,6 +35,11 @@ fn main() {
     display_heading("Functions");
     functions::lesson1();
     functions::lesson2();
+
+    display_heading("Ownership");
+    ownership::lesson1();
+    ownership::lesson2();
+    ownership::lesson3();
 
     println!();
 }
