@@ -19,9 +19,9 @@ pub fn lesson2() {
 }
 
 /* Unit Type: 🌟🌟 */
-fn implicitly_ret_unit() { }
-
 pub fn lesson3() {
+    fn implicitly_ret_unit() { }
+
     let v: () = ();
     let _v = (2, 3);
 

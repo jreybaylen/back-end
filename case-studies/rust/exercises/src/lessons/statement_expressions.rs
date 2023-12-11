@@ -1,11 +1,11 @@
 use crate::lessons::lesson_complete;
 
 /* Statements: 🌟🌟 */
-fn sum(x: i32, y: i32) -> i32 {
-    x + y
-}
-
 pub fn lesson1() {
+    fn sum(x: i32, y: i32) -> i32 {
+        x + y
+    }
+    
     let v = {
         let mut x = 1;
         

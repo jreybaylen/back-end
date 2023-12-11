@@ -5,7 +5,8 @@ use exercises::lessons::{
     char_bool_unit,
     statement_expressions,
     functions,
-    ownership
+    ownership,
+    reference_borrowing
 };
 
 fn main() {
@@ -40,6 +41,12 @@ fn main() {
     ownership::lesson1();
     ownership::lesson2();
     ownership::lesson3();
+
+    display_heading("Referencing and Barrowing");
+    reference_borrowing::lesson1();
+    reference_borrowing::lesson2();
+    reference_borrowing::lesson3();
+    reference_borrowing::lesson4();
 
     println!();
 }
