@@ -6,7 +6,8 @@ use exercises::lessons::{
     statement_expressions,
     functions,
     ownership,
-    reference_borrowing
+    reference_borrowing,
+    string
 };
 
 fn main() {
@@ -47,6 +48,9 @@ fn main() {
     reference_borrowing::lesson2();
     reference_borrowing::lesson3();
     reference_borrowing::lesson4();
+
+    display_heading("String");
+    string::lesson1();
 
     println!();
 }
