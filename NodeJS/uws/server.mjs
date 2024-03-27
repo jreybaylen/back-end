@@ -8,6 +8,6 @@ uWebSockets
         res.end('Hello World!')
     })
     .listen(PORT, function (token) {
-        console.log( token ? 'Listening to port ' : 'Failed to listen to port ' + PORT)
+        console.log(`${ token ? 'Listening to port' : 'Failed to listen to port' }: ${ PORT }`)
     })
 

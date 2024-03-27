@@ -2,14 +2,17 @@
   "name": "uws",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.mjs",
   "scripts": {
-    "start": "node index.mjs"
+    "start": "nodemon"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
