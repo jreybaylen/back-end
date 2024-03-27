@@ -1,18 +1,32 @@
 import { App } from 'uWebSockets.js'
+import * as DotENV from 'dotenv'
+
+import { Logger } from './utils/logger.mjs'
 
 import { HelloWorld } from './api/hello-world.mjs'
 
 const PORT = 2024
 const uWebSockets = App()
+const LoggerAPI = new Logger()
 
-const HelloWorldAPI = new HelloWorld()
+try {
+    const HelloWorldAPI = new HelloWorld()
 
-uWebSockets.get(
-    '/hello-world',
-    HelloWorldAPI.greeting
-)
+    DotENV.config()
 
-uWebSockets.listen(PORT, function (token) {
-    console.log(`${ token ? 'Listening to port' : 'Failed to listen to port' }: ${ PORT }`)
-})
+    uWebSockets
+        .get(
+            '/hello-world',
+            HelloWorldAPI.greeting
+        )
+        .listen(PORT, function (token) {
+            if (!token) {
+                throw new Error(`Failed to listen to port ${ PORT }`)
+            }
+            
+            LoggerAPI.info(`Listening to port ${ PORT }`)
+        })
+} catch (error) {
+    LoggerAPI.error(error.message)
+}
 
