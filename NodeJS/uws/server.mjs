@@ -29,4 +29,3 @@ try {
 } catch (error) {
     LoggerAPI.error(error.message)
 }
-
