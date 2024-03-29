@@ -1,14 +1,17 @@
 {
   "name": "uws",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple NodeJS API",
   "main": "server.mjs",
   "scripts": {
     "dev": "nodemon",
     "start": "node server.mjs"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Node.js",
+    "uWebSocket.js"
+  ],
+  "author": "John Rey Baylen",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
