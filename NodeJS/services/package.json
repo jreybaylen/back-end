@@ -1,0 +1,22 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "description": "A simple services for Vercel",
+  "type": "module",
+  "scripts": {
+    "dev": "node api/hello-world.mjs"
+  },
+  "keywords": [
+    "Node.js",
+    "APIs",
+    "Micro Services"
+  ],
+  "author": "John Rey Baylen",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.43.0"
+  }
+}
