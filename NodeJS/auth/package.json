@@ -7,7 +7,7 @@
 		"build": "rm -rf build; tspc --build",
 		"start": "pnpm build; node build/main.js",
 		"prepare": "husky",
-		"pretty": "prettier --config config/prettier.config.mjs --write .",
+		"pretty": "prettier --ignore-path config/.prettierignore --config config/prettier.config.mjs --write .",
 		"lint": "eslint --fix .",
 		"generate:tsconfig": "tsc --init"
 	},
