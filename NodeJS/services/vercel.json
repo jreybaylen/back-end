@@ -1,9 +1,0 @@
-{
-    "version": 2,
-    "rewrites": [
-        {
-            "source": "/hello-world",
-            "destination": "/api/hello-world"
-        }
-    ]
-}
