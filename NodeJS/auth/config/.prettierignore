@@ -1,0 +1,9 @@
+logs/
+
+.husky/
+.gitignore
+
+.env
+.env.local
+
+pnpm-lock.yaml
