@@ -10,7 +10,7 @@
 
 		/* Language and Environment */
 		"target": "ESNext",
-		
+
 		/* Modules */
 		"module": "commonjs",
 		"rootDir": "src",
@@ -24,11 +24,11 @@
 			"@utils/*": ["src/utils/*"]
 		},
 		"resolveJsonModule": true,
-		
+
 		/* Emit */
 		"outDir": "build",
 		"removeComments": true,
-		
+
 		/* Interop Constraints */
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
