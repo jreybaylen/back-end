@@ -6,3 +6,4 @@
 - MongoDB (Database)
 - Winston (Logger)
 - DateFNS (Dates)
+- Redis (Cache)

@@ -26,6 +26,8 @@
 		"date-fns": "^3.6.0",
 		"express": "^4.19.2",
 		"mongodb": "^6.5.0",
+		"moongose": "^1.0.0",
+		"redis": "^4.6.13",
 		"winston": "^3.13.0"
 	},
 	"packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
