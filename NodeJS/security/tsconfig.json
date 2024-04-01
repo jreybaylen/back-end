@@ -16,6 +16,7 @@
 		"rootDir": "src",
 		"baseUrl": ".",
 		"paths": {
+			"@root/*": ["./*"],
 			"@src/*": ["src/*"],
 			"@lib/*": ["src/lib/*"],
 			"@controllers/*": ["src/controllers/*"],
