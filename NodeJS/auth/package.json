@@ -16,10 +16,7 @@
 	"devDependencies": {
 		"@types/express": "^4.17.21",
 		"dotenv": "^16.4.5",
-		"husky": "^9.0.11",
-		"lint-staged": "^15.2.2",
 		"nodemon": "^3.1.0",
-		"prettier": "^3.2.5",
 		"ts-node": "^10.9.2",
 		"ts-patch": "^3.1.2",
 		"tsconfig-paths": "^4.2.0",
@@ -30,11 +27,6 @@
 		"date-fns": "^3.6.0",
 		"express": "^4.19.2",
 		"winston": "^3.13.0"
-	},
-	"lint-staged": {
-		"*.{ts,js,json}": [
-			"pnpm pretty"
-		]
 	},
 	"packageManager": "pnpm@8.15.5+sha256.4b4efa12490e5055d59b9b9fc9438b7d581a6b7af3b5675eb5c5f447cee1a589"
 }
