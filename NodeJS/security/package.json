@@ -1,12 +1,11 @@
 {
-	"name": "auth",
+	"name": "security",
 	"version": "1.0.0",
-	"description": "A simple auth API",
+	"description": "A security microservice",
 	"scripts": {
 		"dev": "nodemon",
 		"build": "rm -rf build; tspc --build",
 		"start": "pnpm build; node build/main.js",
-		"prepare": "husky",
 		"pretty": "prettier --ignore-path config/.prettierignore --config config/.prettierrc.json --write .",
 		"generate:tsconfig": "tsc --init"
 	},
