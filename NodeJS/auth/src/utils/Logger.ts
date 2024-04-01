@@ -1,15 +1,17 @@
-import { format, createLogger, transports } from 'winston'
-import { format as dateFormat } from 'date-fns'
+import winston from 'winston'
+import dateFNS from 'date-fns'
 
 export class Logger {
-	#timestamp = dateFormat(new Date(), 'MM-dd-yyyy')
-	#logger = createLogger({
-		format: format.combine(format.timestamp(), format.json()),
+	
+	#timestamp = dateFNS.format(new Date(), 'MM-dd-yyyy')
+
+	#logger = winston.createLogger({
+		format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
 		transports: [
-			new transports.Console(),
-			new transports.File({
+			new winston.transports.Console(),
+			new winston.transports.File({
 				handleExceptions: true,
-				filename: `logs/${this.#timestamp}/log.txt`
+				filename: `logs/${ this.#timestamp }/log.txt`
 			})
 		]
 	})
