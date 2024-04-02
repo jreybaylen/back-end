@@ -13,8 +13,8 @@ try {
 	new Cluster(function() {
 		dotenv.config({ path: ENV_PATH })
 		app
-			.use(express.json())
 			.use(express.static('public'))
+			.use(express.json())
 			.use('/auth', AuthRoute)
 			.listen(
 				process.env.PORT,
