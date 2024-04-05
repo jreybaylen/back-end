@@ -4,7 +4,7 @@ declare namespace NodeJS {
 
 		PORT: number
 		HOST: string
-		MONGO_DB_CONNECT: string
+		MONGO_DB_URI: string
 		MONGO_DB_NAME:string
 	}
 }

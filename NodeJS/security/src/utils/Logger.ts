@@ -4,6 +4,8 @@ import { format, createLogger, transports } from 'winston'
 import { version } from '@root/package.json'
 
 export class Logger {
+
+	#isProductionENV = process.env.NODE_ENV !== 'development'
 	
 	#timestamp = dateFNS.format(new Date(), 'MM-dd-yyyy')
 
@@ -41,18 +43,27 @@ export class Logger {
 	})
 
 	info = (message: string | object) => {
-		this.#logger.info(message)
+		if (this.#isProductionENV) {
+			this.#logger.info(message)
+		}
 	}
 
 	warn = (message: string | object) => {
-		this.#logger.warn(message)
+		if (this.#isProductionENV) {
+			this.#logger.warn(message)
+		}
 	}
 
 	crit = (message: string | object) => {
-		this.#logger.crit(message)
+		if (this.#isProductionENV) {
+			this.#logger.crit(message)
+		}
 	}
 
 	error = (message: string | object) => {
-		this.#logger.error(message)
+		if (this.#isProductionENV) {
+			this.#logger.error(message)
+		}
 	}
+
 }

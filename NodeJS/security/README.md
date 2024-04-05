@@ -1,9 +1,22 @@
 # Security Microservice
 
+## Features
+
+- Clustering
+- Logging
+
+- Monitoring
+- Caching
+- Tokenizing
+- Authentication
+- Authorization
+
 ## Technologies
-- TypeScript & NodeJS (Back-End)
-- Express (Back-End Framework)
-- MongoDB (Database)
-- Winston (Logger)
-- DateFNS (Dates)
-- Redis (Cache)
+
+- TypeScript
+- NodeJS
+- Express
+- MongoDB
+- Winston
+- DateFNS
+- Redis
