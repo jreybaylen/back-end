@@ -1,3 +1,3 @@
-import { TestAdapter } from "@adapter/test"
+import { FactoryMethod } from "@factory/FactoryMethod"
 
-new TestAdapter()
+new FactoryMethod()
