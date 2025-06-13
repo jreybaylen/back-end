@@ -1,0 +1,23 @@
+{
+  "name": "design-pattern",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build:clean": "del-cli dist",
+    "build": "pnpm build:clean && tsc && resolve-tspaths",
+    "start": "node dist/main.js",
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "del-cli": "^6.0.0",
+    "nodemon": "^3.1.10",
+    "resolve-tspaths": "^0.8.23",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  }
+}
