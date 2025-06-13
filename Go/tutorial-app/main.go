@@ -1,9 +1,11 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"tutorial-app/fundamentals"
+	gogitbook "tutorial-app/go-git-book"
 	"tutorial-app/payment"
 )
 
@@ -17,6 +19,7 @@ func apiTraining() {
 }
 
 func main() {
+	fmt.Println(gogitbook.Greetings())
 	fundamentals.DataTypes()
 	fundamentals.Method()
 	fundamentals.ArrayMethod()
