@@ -1,0 +1,22 @@
+{
+  "name": "hono-app",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "test": "tsx --test",
+    "build": "tsc",
+    "start": "pm2 start build/index.js",
+    "stop": "pm2 stop build/index.js",
+    "monitoring": "pm2 monit build/index.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.16.0",
+    "hono": "^4.8.5",
+    "pm2": "^6.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}
